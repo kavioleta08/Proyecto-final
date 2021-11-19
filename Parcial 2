@@ -1,0 +1,12 @@
+!pip list 
+!wget https://bootstrap.pypa.io/get-pip.py
+!python get-pip.py
+!pip install lxml sqlalchemy
+!pip install pyreadline ipython
+!pip install flake8 nose mock
+!pip install obspy
+!pip install -U obspy
+import obspy
+from obspy.core import UTCDateTime
+time = UTCDateTime("2012-09-07T12:15:00" )
+print (time)
